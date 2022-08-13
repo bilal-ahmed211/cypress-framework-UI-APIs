@@ -1,0 +1,21 @@
+{
+  "name": "cypress-ui-framework",
+  "version": "1.0.0",
+  "description": "UI Automation Framework for modern web applications",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:dashboard": "npx cypress run --browser chrome --record --key caf8c06f-d790-4925-9d49-db058f0a592c",
+    "cy:chrome": "npx cypress run --browser chrome",
+    "cy:firefox": "npx cypress run --browser firefox"
+  },
+  "author": "Bilal Ahmed",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.4.0",
+    "axe-core": "^3.5.6",
+    "cypress": "^10.4.0",
+    "cypress-axe": "^1.0.0"
+  },
+  "dependencies": {}
+}
