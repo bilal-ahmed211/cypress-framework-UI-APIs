@@ -34,3 +34,39 @@ Cypress.Commands.add('customCheckAlly', () => {
     cy.checkA11y(null, null, callback);
 });
 
+Cypress.Commands.add("getAPI", (url, headers)=>{
+
+    cy.request({
+        method: "GET",
+        url: url,
+        headers: headers
+    });
+});
+
+Cypress.Commands.add("postAPI", (url, headers, payload)=>{
+
+    cy.request({
+        method: "POST",
+        url: url,
+        headers: headers,
+        body: payload
+    });
+});
+
+Cypress.Commands.add("putAPI", (url, headers, payload)=>{
+
+    cy.request({
+        method: "PUT",
+        url: url,
+        headers: headers
+    });
+});
+
+Cypress.Commands.add("putAPI", (url, headers, payload)=>{
+
+    cy.request({
+        method: "DELET",
+        url: url,
+        headers: headers
+    });
+});
